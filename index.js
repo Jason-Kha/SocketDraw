@@ -1,19 +1,21 @@
-const app = require('express')();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const express = require('express');
+const app = express();
+const socketio = require('socket.io');
 
-app.get('/ProjectGamers', (req, res) => {
-    res.sendFile(__dirname + '/index.html');
-});
+// run express server on port 3000
+const expressServer = app.listen(3000);
 
+// set up static webpage
+app.use(express.static(__dirname + '/public'));
+
+// socket.io setup
+const io = socketio(expressServer);
+
+// on user connection
 io.on('connection', (socket) => {
     console.log('a user connected');
 
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });
-});
-
-http.listen(3000, () => {
-    console.log('listening on *:3000');
 });
