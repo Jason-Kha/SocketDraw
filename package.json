@@ -1,0 +1,27 @@
+{
+    "name": "socketdraw",
+    "version": "1.0.0",
+    "description": "Drawing guessing game made with Socket.io",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jason-Kha/SocketDraw.git"
+    },
+    "author": "Jason Kha and Michael Ontiveros",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Jason-Kha/SocketDraw/issues"
+    },
+    "homepage": "https://github.com/Jason-Kha/SocketDraw#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^3.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
