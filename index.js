@@ -9,4 +9,8 @@ app.get('/ProjectGamers', (req, res) => {
 
 http.listen(3000, () => {
     console.log('listening on *:3000');
+
+
+
+    console.log('welcome to project gamers');
 });
