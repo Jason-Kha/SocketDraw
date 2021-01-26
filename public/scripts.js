@@ -4,6 +4,7 @@ const socket = io('http://localhost:3000');
 // on connection to server
 socket.on('connect', () => {
     console.log(`socket: ${socket.id}`);
+    console.log('g');
 });
 
 // on chat message
