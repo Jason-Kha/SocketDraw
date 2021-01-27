@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/Jason-Kha/SocketDraw#readme",
     "dependencies": {
+        "config": "^3.3.3",
         "express": "^4.17.1",
         "socket.io": "^3.1.0"
     },
