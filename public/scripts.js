@@ -2,7 +2,13 @@
 const socket = io('localhost:3000');
 
 // retrieve username
-const username = prompt('Please enter your name');
+var username = null;
+
+// handle empty/null usernames
+while (username === '' || username === null) {
+    var username = prompt('Please enter your name');
+}
+
 socket.emit('newUser', username);
 
 // on connection to server
