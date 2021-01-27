@@ -1,5 +1,5 @@
 // change this to correct ip later
-const socket = io('http://localhost:3000');
+const socket = io('206.189.210.70:3000');
 
 // on connection to server
 socket.on('connect', () => {

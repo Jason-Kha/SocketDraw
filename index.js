@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const socketio = require('socket.io');
 
+const config = require('config');
+
 // run express server on port 3000
 const expressServer = app.listen(3000);
 
