@@ -1,18 +1,19 @@
 // change this to correct ip later
-const socket = io('206.189.210.70:3000');
+const socket = io('localhost:3000');
 
 // on connection to server
 socket.on('connect', () => {
     console.log(`socket: ${socket.id}`);
-    console.log('g');
 });
 
 // on chat message
 socket.on('chat message', (msg) => {
     // create listed item with message
-    var item = document.createElement('li');
-    item.textContent = msg;
+    var item = document.createElement('tr');
+    item.innerHTML = `<td>${msg}</td>`;
+
     messages.appendChild(item);
+
     window.scrollTo(0, document.body.scrollHeight);
 });
 

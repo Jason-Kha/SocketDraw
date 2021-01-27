@@ -1,12 +1,6 @@
-/*
-    work in progress to send
-    to node.js server
-*/
-
-body
-{
+body {
     margin: 0px;
     padding: 0px;
 
-    background-color:  #3c4448;
+    background-color: #3c4448;
 }
