@@ -1,5 +1,7 @@
+const config = require('config');
+
 // change this to correct ip later
-const socket = io('http://localhost:3000');
+const socket = io(config.get("ip"));
 
 // on connection to server
 socket.on('connect', () => {
